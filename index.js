@@ -48,3 +48,14 @@ for (let i = 0; i < th.length; i++) {
 
 tr[0].appendChild(tag).textContent = "Name";
 tr[0].appendChild(newTag).textContent = "Email";
+
+//lägg till main.css
+
+let s = document.getElementsByTagName("head")[0];
+
+let style = document.createElement("link");
+style.href = "main.css";
+style.type = "text/css";
+style.rel = "stylesheet";
+
+s.append(style);
